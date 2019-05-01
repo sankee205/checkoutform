@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout/Login</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Fashion Store</h1>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <!---->
+        <div class="shoppingcart">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+            <a href="#" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+            </a>
+
+        </div>
+        <!---->
+
+        <nav>
+            <ul class="ulnavigation">
+                <li class="linavigation"><a href="#">Home</a></li>
+                <li class="linavigation"><a href="#">Payment</a>
+                    <ul class="ulnavigation">
+                        <li class="linavigation"><a href="#">Card<a></li>
+                        <li class="linavigation"><a href="#">Paypal<a></li>
+                    </ul>
+                </li>
+                <li class="linavigation"><a href="#">Shop</a>
+                    <ul class="ulnavigation">
+                        <li class="linavigation"><a href="#">Men's</a></li>
+                        <li class="linavigation"><a href="#">Women's</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+            <div>
+                <h1>Checkout</h1>
+            </div>
+
+            <div>
+                <h2>Payment form</h2>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div>
+                <form action="/action_page.php">
+
+                    <h3>Step 1: Contact information</h3>
+
+                    <label for="fname">Title</label>
+
+                    <ul>
+                        <li>
+                            <label for="title_1">
+                                <input type="radio" id="title_1" name="title" value="M.">
+                                                      Mister
+                            </label>
+                        </li>
+                                         
+                        <li>
+                            <label for="title_2">
+                                <input type="radio" id="title_2" name="title" value="Ms.">
+                                                      Miss
+                            </label>
+                        </li>
+                    </ul required>
+
+                    <ul>
+                        <li>
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname"  placeholder="Your name.." required>
+                        </li>
+                        <li>
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                        </li>
+                        <li>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="usermail" placeholder="Your email.. " required>
+                        </li>
+
+                        <li>
+                            <label for="psw">Passord</label>
+                            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                placeholder="Your password.. " required>
+                            <div id="message">
+                                <h3>Password must contain the following:</h3>
+                                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid">A <b>number</b></p>
+                                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                            </div>
+
+
+                            <label class="switch">
+                                <input type="checkbox" onclick="myFunction()">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Show Password</p>
+                            <br>
+
+                        </li>
+
+
+                        <li>
+                            <label for="country">Country</label>
+                            <br>
+                            <form autocomplete="off" action="/action_page.php">
+                                <div class="autocomplete">
+                                    <input id="myInput" type="text" name="myCountry" placeholder="Your Country.."
+                                        required>
+                                </div>
+
+                            </form>
+                        </li>
+                        <h3>Step 2: Card information</h3>
+
+
+                        <li>
+                            <label for="CardType">Card Type</label>
+                            <select id="CardType" name="CardType">
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">Mastercard</option>
+                                <option value="americanExpress">American Express</option>
+                            </select>
+
+                        </li>
+                        <li>
+                            <label for="CardNumber">Card Number</label>
+                            <input type="number" id="CardNumber" name="CardNumber" placeholder="Your card number.."
+                                required>
+
+                        <li>
+                            <label for="date">E-Expiration date:</label>
+                            <input type="date" id="date" name="expiration" placeholder="Your e-expiration date "
+                                required>
+
+                        </li>
+                        <li>
+                            <label for="securitycode">Security code (CVC)</label>
+                            <input type="number" id="securitycode" name="securitycode"
+                                placeholder="Your security code.." required>
+                            
+                        </li>
+                        <li>
+                            <input type="submit" name="submit" value="Submit" onclick="validatecvc(), validatenumber(), 
+                            validatefname(), validateCountry()"/>
+
+                        </li>
+                    </ul>
+                    
+
+
+                    <script src="main.js"></script>
+
+
+
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="grid-item-transparent"></div>
+            <article class="grid-text">
+                <h1 class="footertext">
+                    Je suis la mode et la mode c'est moi</h1>
+                <p class="footertext">"We did it for the humanity" - Fashionova</p>
+            </article>
+            <div class="grid-item-transparent"></div>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>

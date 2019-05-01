@@ -1,0 +1,570 @@
+/**this is the css code for the website**/
+
+
+
+/*this is the style code for the contry function*/
+.myInputautocomplete-list{
+    background-color: white;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+   width: 100%;
+   margin:0;
+
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 0px;
+border: hidden;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+#myInputautocomplete-list {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+/*this is the style code for the slide button under show password*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+/*this is the style code for the pop up notification*/
+/**message**/
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+/* Style the container for inputs */
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/*stops here*/
+
+
+
+
+
+
+li {
+    list-style-type: none;
+    /**font-size: 16pt;*/
+}
+
+section {
+    margin: auto;
+    width: 45em;
+    padding: relative;
+
+    float: center;
+
+}
+
+/* this is the style code for the form */
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.mmlist {
+    list-style-type: " ";
+}
+
+div {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: hidden;
+}
+
+
+/*this is the styoe code for the shopping cart item*/
+.shoppingcart {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    border-radius: 0em;
+    background-color: dodgerblue;
+    padding: 1em;
+    border: hidden;
+}
+
+
+
+
+
+
+/*this is the style code for the nav bar in the headerf*/
+.ulnavigation {
+    background: dodgerblue;
+    padding: 20px;
+    border-radius: 4px;
+
+    list-style-type: none;
+}
+
+
+
+.linavigation {
+    background: dodgerblue;
+    margin: 5px;
+    list-style-type: none;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: serif;
+
+}
+
+:root {
+    --background: dodgerblue;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
+body {
+    margin: auto;
+    background: #222;
+    font-family: 'work sans', sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+
+img {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.content {
+    height: 200vh;
+    background-color: #333;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+/*Navigation styles start here*/
+
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+
+
+
+
+.nav-toggle {
+    display: none;
+}
+
+.grid-container {
+    margin-top: 5rem;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: ' ';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 8px;
+}
+
+.nav-toggle-label span::after {
+    top: 8px;
+}
+
+.grid-text {
+    text-align: center;
+    color: white;
+}
+
+.grid-item {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+nav ul li ul li {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*Makes it so that the website changes to a
+pc friendly version when the screen width
+of a device is wider than 800px*/
+
+@media screen and (min-width: 800px) {
+    .grid-container {
+        display: grid;
+        position: relative;
+        width: 100%;
+        grid-template-columns: 200px auto 200px;
+        background-color: #ccc;
+        padding: 10px;
+    }
+
+    .grid-item {
+        display: block;
+        background-color: #424242;
+        text-align: center;
+        color: black;
+    }
+
+    .grid-item-transparent {
+        display: block;
+        background-color: #ccc;
+        text-align: center;
+        color: white;
+    }
+
+    .grid-text {
+        text-align: center;
+        color: black;
+        margin: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    .main-article {
+        display: none;
+    }
+
+    .article {
+        display: block;
+        position: fixed;
+        top: 400px;
+        width: 100%;
+        text-align: center;
+        background-color: #222;
+        color: white;
+    }
+
+    footer {
+        width: 100%
+    }
+
+    img {
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+
+    .ash-facts {
+        margin: 0;
+    }
+
+    /*shopping cart*/
+    .ecwid .ecwid-btn–addToBag {
+        background: #ff9c33;
+    }
+
+    .ecwid .ecwid-btn–addToBag:hover {
+        background: #ffc180;
+    }
+
+    .ecwid .ecwid-btn–addToBag:focus,
+    .ecwid .ecwid-btn–addToBag:focus:hover {
+        border-color: #ffc180;
+    }
+
+    .ecwid .ecwid-btn–addToBag:active,
+    .ecwid .ecwid-btn–addToBag:focus:active {
+        background: #ff9c33;
+    }
+}
